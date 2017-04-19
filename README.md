@@ -22,14 +22,13 @@ Activate the testprc
 $testrpc
 ```
 
-This gave us nine available accounts and private keys to play with. 
+This gave us nine available accounts and private keys to play with.
 
+![testrpc_accounts](/img/testrpc_accounts.png)
 
-We desployed the contracts using the Truffle console, which has access to the Web3 API.
+Next, deploy the contracts using the Truffle console, which has access to the Web3 API. Open a new terminal and type `$truffle deploy` and then `$truffle console`. 
 
-Open a new terminal and type `$truffle deploy` and then `$truffle console`. 
-
-Inside the console, we tested out a few [activities using Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API). 
+Inside the console, tested out a few [activities using Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API). 
 
 #### Sending Ether
 _For reference in our screenshots, we set `eth = config.web3.eth`._
@@ -38,13 +37,18 @@ To send a transacton from one account to another
 ```
 eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(1, "ether")});
 ```
+![send_transaction](/img/send_transaction.png)
 
 We sent 1 wei from account[0] to account[1].
 
 #### Check Balance
 We could then check the balance of the two accounts to see if our transaction was successful. 
 
+![get_balance](/img/get_balance.png)
+
 Yay.
 
 #### Checking receipts.
 Given that we have the transactionHash, we can find out how much gas was used and other details about the transaction by typing `eth.getTransactionReceipt(transactionHash)`.
+
+![check_receipt](/img/check_receipt.png)
