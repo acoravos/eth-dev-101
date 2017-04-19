@@ -26,9 +26,17 @@ This gave us nine available accounts and private keys to play with.
 
 ![testrpc_accounts](/img/testrpc_accounts.png)
 
-Next, deploy the contracts using the Truffle console, which has access to the Web3 API. Open a new terminal and type `$truffle deploy` and then `$truffle console`. 
+Next, deploy the contracts using Truffle, which has access to the Web3 API. Open a new terminal, cd into the Truffle app, type `$truffle deploy` and then `$ node`. We then set up our config:
 
-Inside the console, tested out a few [activities using Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API). 
+```
+var config = require('./config.js');
+```
+
+And we can check our existing accounts using `config.web3.eth.accounts`
+
+![list_accounts](/img/list_accounts.png)
+
+Now we're ready to test out a few [activities using Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API). 
 
 #### Sending Ether
 _For reference in our screenshots, we set `eth = config.web3.eth`._
