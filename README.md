@@ -29,7 +29,7 @@ This gave us nine available accounts and private keys to play with.
 Next, deploy the contracts using Truffle, which has access to the Web3 API. Open a new terminal, cd into the Truffle app, type `$truffle deploy` and then `$ node`. We then set up our config:
 
 ```
-var config = require('./config.js');
+var config = require('../config.js');
 ```
 
 And we can check our existing accounts using `config.web3.eth.accounts`
