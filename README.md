@@ -1,7 +1,7 @@
 # eth-dev-101
 Playing around with Alex Miller's [Getting Started as an Ethereum Web Developer](https://hackernoon.com/getting-started-as-an-ethereum-web-developer-9a2a4ab47baf). 
 
-Cryptography Intependent Project @ Harvard University, Spring 2017. 
+Cryptography Independent Project @ Harvard University, Spring 2017. 
 
 ## Guide to manually execute transactions using testrpc and truffle
 
@@ -60,3 +60,5 @@ Yay.
 Given that we have the transactionHash, we can find out how much gas was used and other details about the transaction by typing `eth.getTransactionReceipt(transactionHash)`.
 
 ![check_receipt](/img/check_receipt.png)
+
+Cryptography Independent Project @ Harvard University, Spring 2017. 
